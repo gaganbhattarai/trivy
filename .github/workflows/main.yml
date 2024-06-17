@@ -33,7 +33,7 @@ jobs:
         uses: aquasecurity/trivy-action@0.20.0
         with:
           image-ref: 'test:v1'
-          format: 'txt'
+          format: 'table'
           output: 'trivy-results.txt'
 
       # - name: Upload Trivy scan results to GitHub Security tab
