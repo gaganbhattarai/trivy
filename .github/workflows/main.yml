@@ -18,7 +18,7 @@ jobs:
         uses: aquasecurity/trivy-action@0.20.0
         with:
           image-ref: 'test:v1'
-          format: 'table'
+          format: 'json'
           exit-code: '1'
           ignore-unfixed: true
           vuln-type: 'os,library'
